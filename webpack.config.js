@@ -1,3 +1,5 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
 module.exports = {
   entry: './src/js/app.js',
   output: {
@@ -9,5 +11,8 @@ module.exports = {
       {test: /\.css$/, loader: "style-loader!css-loader"}
       // {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, query:{presets: ['es2015']}}
     ]
-  }
+  },
+  plugins: [
+    new UglifyJsPlugin()
+  ]
 }
