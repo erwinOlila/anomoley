@@ -1,3 +1,8 @@
-body {
-  background: yellow;
+html, body {
+  margin: 0;
+}
+
+canvas {
+  border: 1px solid black;
+  background: #F1E0B1;
 }
